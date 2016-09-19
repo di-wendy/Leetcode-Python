@@ -18,6 +18,15 @@ matrix = [1,2,3,4,5,6]
 matrix = [[1,2,3]]+[[2,3,4]]
 matrix = [[1,2,3],[2,3,4]]
 
+c = np.subtract(a,b)
+
+###3.x 技巧
+判断Array是否为空集
+Array != []
+判断Array是否相等
+np.array_equal(a,b)
+
+
 ##4.Stack & Queue
 
 ##Appendix. Set Object
