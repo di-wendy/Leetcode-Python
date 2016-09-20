@@ -26,6 +26,9 @@ Array != []
 判断Array是否相等
 np.array_equal(a,b)
 
+###python列表去重
+http://www.cnblogs.com/linxiyue/p/3912315.html
+
 
 ##4.Stack & Queue
 
