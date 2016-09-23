@@ -11,14 +11,11 @@ class Solution(object):
         :rtype: ListNode
         """
         
-        if head == None or head.next == None:
-            return head
-        
-        mark = head.next
-        
-        while (head.next != None):
-                pin = head.next.next  #store pointer at position 3
-                np = head.next
-                np.next = head
-                head.next = pin
-                head = pin
+        pre, pre.next = self, head
+        while pre.next and pre.next.next:
+            a = pre.next
+            b = a.next
+            pre.next, b.next, a.next = b, a, b.next
+            pre = a
+            
+        return self.next
