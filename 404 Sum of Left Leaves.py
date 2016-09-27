@@ -19,13 +19,13 @@ class Solution(object):
             global sum1
             if node!= None:
                 if node.left != None and node.right != None:
-                    if node.left.left == None:
+                    if node.left.left == None and node.left.right == None:
                         sum1 += node.left.val
                     return take_sum(node.right),take_sum(node.left)
                 if node.left == None and node.right != None:
                     return take_sum(node.right)
                 if node.left != None and node.right == None:
-                    if node.left.left == None:
+                    if node.left.left == None and node.left.right == None:
                         sum1 += node.left.val
                     return take_sum(node.left)
                 if node.left == None and node.right == None:
