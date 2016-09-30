@@ -20,6 +20,11 @@ matrix = [[1,2,3],[2,3,4]]
 
 c = np.subtract(a,b)
 
+###3.2 Array的操作
+array.insert(i, x)
+Insert a new item with value x in the array before position i. Negative values are treated as being relative to the end of the array.
+Remove: array[:i]+array[i+1:] 不用担心超内存 a=[1,2] print[2:] => []
+
 ###3.x 技巧
 判断Array是否为空集
 Array != []
